@@ -34,11 +34,11 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        userEmail = findViewById(R.id.loginMail);
-        userPassword = findViewById(R.id.loginPassword);
+        userEmail = findViewById(R.id.login_email);
+        userPassword = findViewById(R.id.login_password);
         btnLogin = findViewById(R.id.loginBtn);
-        loginProgress = findViewById(R.id.loginProgressBar);
-        loginPhoto = findViewById(R.id.loginUserPhoto);
+        loginProgress = findViewById(R.id.login_progressbar);
+        loginPhoto = findViewById(R.id.login_user_photo);
         loginProgress.setVisibility(View.INVISIBLE);
 
         HomeActivity = new Intent(this, com.diamong.blogapp0627.Activites.HomeNaviMenu.class);

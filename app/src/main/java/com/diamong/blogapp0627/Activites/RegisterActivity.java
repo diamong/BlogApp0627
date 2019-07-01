@@ -49,11 +49,11 @@ public class RegisterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
-        userName = findViewById(R.id.regName);
-        userEmail = findViewById(R.id.loginMail);
-        userPassword = findViewById(R.id.loginPassword);
-        userPassword2 = findViewById(R.id.regPassword2);
-        loadingProgress = findViewById(R.id.loginProgressBar);
+        userName = findViewById(R.id.profile_name);
+        userEmail = findViewById(R.id.login_email);
+        userPassword = findViewById(R.id.login_password);
+        userPassword2 = findViewById(R.id.profile_password2);
+        loadingProgress = findViewById(R.id.login_progressbar);
         loadingProgress.setVisibility(View.INVISIBLE);
 
         mAuth=FirebaseAuth.getInstance();
@@ -86,7 +86,7 @@ public class RegisterActivity extends AppCompatActivity {
             }
         });
 
-        ImgUserPhoto = findViewById(R.id.loginUserPhoto);
+        ImgUserPhoto = findViewById(R.id.profile_user_photo);
         ImgUserPhoto.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
